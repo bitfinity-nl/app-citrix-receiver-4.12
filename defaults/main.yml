@@ -24,7 +24,7 @@
 #   pkg_repository_public   : 'https://www.7-zip.org/a/7z1900.exe'                  # Direct url to executable.
 #   pkg_repository_private  : 'http://dl.example.com/resource/7zip/7z1805-x64.zip'  # Remote url to package (needs to be zip file).
 #
-pkg_repository_type    : 'present'
+pkg_repository_type    : 'private'
 pkg_repository_public  : ''
 pkg_repository_private : 'http://{{ def_ans_rep }}/resources/packages/citrix/receiver/CitrixReceiver-412-win.zip'
 
