@@ -43,11 +43,11 @@ pkg_state        : 'present'
 pkg_name         : 'CitrixReceiver-412-win'
 pkg_arch         : '32bit'
 pkg_repo_local   : 'c:\ProgramData\ansible\cached\{{ pkg_name }}'
-pkg_product_id   : '{332E9FC3-FCE6-4ACF-A799-B7C052779125}'
+pkg_product_id   : '{0378AD83-048F-4C7F-AFD6-3CEDA4212ACD}'
 pkg_installer    : '{{ pkg_repo_local }}\CitrixReceiver.exe'
 pkg_arguments    : '/SILENT /includeSSON ENABLE_SSON="Yes"'
-pkg_uninstaller  : ''
-pkg_unarguments  : ''
+pkg_uninstaller  : 'MsiExec.exe /X{0378AD83-048F-4C7F-AFD6-3CEDA4212ACD}'
+pkg_unarguments  : '/qn'
 
 
 # -- Application specific settings:
